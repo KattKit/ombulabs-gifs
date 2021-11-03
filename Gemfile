@@ -5,8 +5,6 @@ ruby '2.7.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -31,6 +29,16 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  gem "rspec", "~> 3.10"
+
+  gem "capybara", "~> 3.36"
+
+  gem "factory_bot", "~> 6.2"
+
+  gem "rspec-rails", "~> 5.0"
+
+  gem "factory_bot_rails", "~> 6.2"
 end
 
 group :development do
@@ -48,15 +56,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "devise", "~> 4.8"
-
-gem "rspec", "~> 3.10"
-
-gem "capybara", "~> 3.36"
-
-gem "factory_bot", "~> 6.2"
-
-gem "rspec-rails", "~> 5.0"
-
-gem "factory_bot_rails", "~> 6.2"
 
 gem "pg", "~> 1.2"
