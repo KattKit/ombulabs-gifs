@@ -1,0 +1,9 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      # Provide the password via an environment variable. If the variable is unset or empty, use a default password
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-V/OiVuWW5FrKrVAntxK6lWTEi5I6iWwE6npfes1RXh4aGtzzYhVsn5xF8iHAbooNTmiUaiwRK9Dz+8ICwdUDjw==}
+    ports:
+      - 5432:5432

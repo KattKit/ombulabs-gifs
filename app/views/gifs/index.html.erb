@@ -1,0 +1,7 @@
+<h1>Gifs!</h1>
+<%= link_to "Upload new Gif", new_gif_path%>
+<br/>
+
+<% @list.each do |gif| %>
+  <%= image_tag gif.file, :width => 300, :height => 300%>
+<% end %>
